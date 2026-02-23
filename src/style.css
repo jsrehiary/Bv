@@ -126,6 +126,17 @@ h4 {
   flex: 0 0 64px;
 }
 
+/* swiper */
+.swiper-slide img {
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+
+.swiper-slide {
+  user-select: none;
+}
+
 /* Mengatur ulang ukuran heading khusus di layar HP/Tablet (maksimal lebar 768px) */
 @media (max-width: 768px) {
   h1 {
