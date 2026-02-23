@@ -126,6 +126,25 @@ h4 {
   flex: 0 0 64px;
 }
 
+/* Mengatur ulang ukuran heading khusus di layar HP/Tablet (maksimal lebar 768px) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+  
+  h3 {
+    font-size: 1.25em;
+  }
+  
+  h4 {
+    font-size: 1em;
+  }
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
