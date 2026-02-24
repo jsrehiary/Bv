@@ -7,7 +7,7 @@ import { HeroDivision } from "../../components/HeroDivision";
 import { initCoverflowSwiper } from "../../components/CoverflowSwiper";
 import { renderSlidesView, initSlidesView } from "../../components/SlidesView";
 
-export function DKVPage() {
+export function SosmasPage() {
 
   const coverflowData = [
     { img: "src/assets/images/bph/FRAME-BG-BPH-PREVIEW-KEPALA-1.jpg", name: "Keisha Alia", role: "Kepala Biro" },
@@ -19,11 +19,11 @@ export function DKVPage() {
     ${Navbar()}
 
     ${HeroDivision({
-      title: "Biro Desain Komunikasi Visual",
-      accentColor: "#4b4a92",
-      titleColor: "#F77C39",
-      description: "Bertanggung jawab dalam merancang dan mengemas seluruh tampilan visual BEM Vokasi UI 2025.",
-      image: "/images/dkv-logo.png"
+      title: "Departemen Sosial Masyarakat dan Lingkungan",
+      accentColor: "#F64994",
+      titleColor: "#fff",
+      description: "Menjadi wadah penggerak perubahan sosial dan lingkungan yang berkelanjutan. Sosmasling berperan aktif dalam memberikan manfaat bagi masyarakat dan mahasiswa, dengan meningkatkan kesadaran terhadap isu-isu sosial dan lingkungan. Dengan adanya mereka, BEM Vokasi UI 2025 turut menebarkan dampak positif bagi kehidupan sekitar dan menumbuhkan semangat peduli di kalangan IKM Vokasi UI.",
+      image: "/images/sosmas-logo.png"
     })}
 
     <div class="max-w-7xl mx-auto py-16 flex flex-col md:flex-row items-center gap-10">
@@ -40,7 +40,7 @@ export function DKVPage() {
         </div>
       </div>
 
-      <div class="swiper dkvSwiper w-full md:w-[60%]">
+      <div class="swiper sosmasSwiper w-full md:w-[60%]">
         <div class="swiper-wrapper"></div>
       </div>
 
@@ -52,8 +52,8 @@ export function DKVPage() {
       </h2>
 
       ${renderSlidesView({
-        containerClass: "dkvSlides",
-        division: "dkv",
+        containerClass: "sosmasSlides",
+        division: "sosmas",
         slidesPerView: 4
       })}
     </div>
@@ -63,7 +63,7 @@ export function DKVPage() {
 
   queueMicrotask(() => {
     initCoverflowSwiper({
-      containerClass: ".dkvSwiper",
+      containerClass: ".sosmasSwiper",
       data: coverflowData,
       preview: {
         imageId: "mainPreview",
@@ -73,8 +73,8 @@ export function DKVPage() {
     });
 
     initSlidesView({
-      containerClass: "dkvSlides",
-      division: "dkv",
+      containerClass: "sosmasSlides",
+      division: "sosmas",
       slidesPerView: 4
     });
   });

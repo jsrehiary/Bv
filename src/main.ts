@@ -1,42 +1,77 @@
-import './style.css'
-import { HomePage } from './pages/home.ts'
-import { VisualIdentity } from "./pages/about/visualIdentity.ts";
-import { ValuesPage } from "./pages/about/values.ts";
-import { ContactSection } from "./pages/contact.ts";
-import { DKVPage, initDKV } from "./pages/division/dkvPage.ts";
+import './style.css';
+import page from 'page';
 
-function renderPage() {
-  const path = window.location.pathname;
+import { HomePage } from './pages/home'
+import { VisualIdentity } from "./pages/about/visualIdentity"
+import { ValuesPage } from "./pages/about/values"
+import { ContactSection } from "./pages/contact"
+import { DKVPage } from "./pages/division/dkvPage"
+import { PemkarPage } from './pages/division/pemkarPage';
+import { SosmasPage } from './pages/division/sosmasPage';
+import { LitbangPage } from './pages/division/litbang';
+import { PedankPage } from './pages/division/pedank';
+import { SenbudPage } from './pages/division/senbud';
+import { DeporPage } from './pages/division/depor';
 
-  let content = "";
+const app = document.querySelector("#app")!
 
-  if (path === "/about/visual-identity") {
-    content = VisualIdentity();
-  } else if (path === "/about/values") {
-    content = ValuesPage();
-  } else if (path === "/contact") {
-    content = ContactSection();
-  } else if (path === "/biro-dkv") {
-    content = DKVPage();
-  } else {
-    content = HomePage();
-  }
-
-  document.querySelector("#app")!.innerHTML = content;
-
-  // 🔥 INIT AFTER RENDER
-  if (path === "/biro-dkv") {
-    setTimeout(() => {
-      initDKV();
-    }, 0);
-  }
+function render(content: string) {
+  app.innerHTML = content
 }
 
-renderPage();
+/* ================= ROUTES ================= */
 
-window.addEventListener("popstate", renderPage);
+page("/", () => {
+  render(HomePage())
+})
+
+page("/about/visual-identity", () => {
+  render(VisualIdentity())
+})
+
+page("/about/values", () => {
+  render(ValuesPage())
+})
+
+page("/contact", () => {
+  render(ContactSection())
+})
+
+page("/biro-dkv", () => {
+  render(DKVPage())
+})
+
+page("/pemkar", () => {
+  render(PemkarPage())
+})
+
+page("/sosmas", () => {
+  render(SosmasPage())
+})
+
+page("/litbang", () => {
+  render(LitbangPage())
+})
+
+page("/pedank", () => {
+  render(PedankPage())
+})
+
+page("/senbud", () => {
+  render(SenbudPage())
+})
+
+page("/depor", () => {
+  render(DeporPage())
+})
+
+/* ================= START ROUTER ================= */
+
+page()
+
+window.addEventListener("popstate", page);
 
 export function navigate(path: string) {
   window.history.pushState({}, "", path);
-  renderPage();
+  page();
 }

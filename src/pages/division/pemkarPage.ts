@@ -7,7 +7,7 @@ import { HeroDivision } from "../../components/HeroDivision";
 import { initCoverflowSwiper } from "../../components/CoverflowSwiper";
 import { renderSlidesView, initSlidesView } from "../../components/SlidesView";
 
-export function DKVPage() {
+export function PemkarPage() {
 
   const coverflowData = [
     { img: "src/assets/images/bph/FRAME-BG-BPH-PREVIEW-KEPALA-1.jpg", name: "Keisha Alia", role: "Kepala Biro" },
@@ -19,10 +19,10 @@ export function DKVPage() {
     ${Navbar()}
 
     ${HeroDivision({
-      title: "Biro Desain Komunikasi Visual",
-      accentColor: "#4b4a92",
-      titleColor: "#F77C39",
-      description: "Bertanggung jawab dalam merancang dan mengemas seluruh tampilan visual BEM Vokasi UI 2025.",
+      title: "Departemen Pengembangan Karir",
+      accentColor: "#F64994",
+      titleColor: "#fff",
+      description: "Berperan sebagai wadah pengembangan keterampilan dan membantu membuka kesempatan untuk mahasiswa Vokasi UI dalam mempersiapkan kariernya. Pemkar juga membantu mahasiswa menentukan arah karier ke depannya agar lebih terarah dan siap menghadapi tantangan di dunia kerja nanti.",
       image: "/images/dkv-logo.png"
     })}
 
@@ -40,7 +40,7 @@ export function DKVPage() {
         </div>
       </div>
 
-      <div class="swiper dkvSwiper w-full md:w-[60%]">
+      <div class="swiper pemkarSwiper w-full md:w-[60%]">
         <div class="swiper-wrapper"></div>
       </div>
 
@@ -52,8 +52,8 @@ export function DKVPage() {
       </h2>
 
       ${renderSlidesView({
-        containerClass: "dkvSlides",
-        division: "dkv",
+        containerClass: "pemkarSlides",
+        division: "pemkar",
         slidesPerView: 4
       })}
     </div>
@@ -63,7 +63,7 @@ export function DKVPage() {
 
   queueMicrotask(() => {
     initCoverflowSwiper({
-      containerClass: ".dkvSwiper",
+      containerClass: ".pemkarSwiper",
       data: coverflowData,
       preview: {
         imageId: "mainPreview",
@@ -73,8 +73,8 @@ export function DKVPage() {
     });
 
     initSlidesView({
-      containerClass: "dkvSlides",
-      division: "dkv",
+      containerClass: "pemkarSlides",
+      division: "pemkar",
       slidesPerView: 4
     });
   });

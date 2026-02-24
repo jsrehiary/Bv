@@ -7,24 +7,24 @@ import { HeroDivision } from "../../components/HeroDivision";
 import { initCoverflowSwiper } from "../../components/CoverflowSwiper";
 import { renderSlidesView, initSlidesView } from "../../components/SlidesView";
 
-export function DKVPage() {
+export function DeporPage() {
 
   const coverflowData = [
-    { img: "src/assets/images/bph/FRAME-BG-BPH-PREVIEW-KEPALA-1.jpg", name: "Keisha Alia", role: "Kepala Biro" },
-    { img: "src/assets/images/bph/FRAME-BG-BPH-PREVIEW-WK-1-1.jpg", name: "Maria Jessica", role: "Wakil Kepala 2" },
-    { img: "src/assets/images/bph/FRAME-BG-BPH-PREVIEW-WK-2-1.jpg", name: "Fathia Asy", role: "Wakil Kepala 1" },
+    { img: "src/assets/images/bph/FRAME-BG-BPH-PREVIEW-KEPALA-3.png", name: "Julio Abraham", role: "Kepala Biro" },
+    { img: "src/assets/images/bph/FRAME-BG-BPH-PREVIEW-WK-1-3.png", name: "Ardiansyah Eka", role: "Wakil Kepala 1" },
+    { img: "src/assets/images/bph/FRAME-BG-BPH-PREVIEW-WK-2-3.png", name: "Kaisar Fattarani", role: "Wakil Kepala 2" },
   ];
 
   const html = `
     ${Navbar()}
 
     ${HeroDivision({
-      title: "Biro Desain Komunikasi Visual",
-      accentColor: "#4b4a92",
-      titleColor: "#F77C39",
-      description: "Bertanggung jawab dalam merancang dan mengemas seluruh tampilan visual BEM Vokasi UI 2025.",
-      image: "/images/dkv-logo.png"
-    })}
+    title: "Departemen Olahraga",
+    accentColor: "#4b4a92",
+    titleColor: "#F77C39",
+    description: "Berfokus dalam mengembangkan minat dan bakat IKM Vokasi UI khususnya di bidang olahraga. Departemen ini menjadi tempat bagi IKM Vokasi UI yang ingin mengasah kemampuan, menyalurkan hobi, dan berprestasi lewat minat dan bakat mereka dalam bidang olahraga.",
+    image: "/images/depor-logo.png"
+  })}
 
     <div class="max-w-7xl mx-auto py-16 flex flex-col md:flex-row items-center gap-10">
 
@@ -40,7 +40,7 @@ export function DKVPage() {
         </div>
       </div>
 
-      <div class="swiper dkvSwiper w-full md:w-[60%]">
+      <div class="swiper theSwiper w-full md:w-[60%]">
         <div class="swiper-wrapper"></div>
       </div>
 
@@ -52,10 +52,10 @@ export function DKVPage() {
       </h2>
 
       ${renderSlidesView({
-        containerClass: "dkvSlides",
-        division: "dkv",
-        slidesPerView: 4
-      })}
+    containerClass: "theSlides",
+    division: "depor",
+    slidesPerView: 4
+  })}
     </div>
 
     ${Footer()}
@@ -63,7 +63,7 @@ export function DKVPage() {
 
   queueMicrotask(() => {
     initCoverflowSwiper({
-      containerClass: ".dkvSwiper",
+      containerClass: ".theSwiper",
       data: coverflowData,
       preview: {
         imageId: "mainPreview",
@@ -73,8 +73,8 @@ export function DKVPage() {
     });
 
     initSlidesView({
-      containerClass: "dkvSlides",
-      division: "dkv",
+      containerClass: "theSlides",
+      division: "depor",
       slidesPerView: 4
     });
   });

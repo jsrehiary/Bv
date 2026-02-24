@@ -16,7 +16,7 @@ export function Navbar() {
         </button>
       
         <ul class="hidden md:flex justify-center items-stretch h-full gap-4 md:gap-8">
-          <li class="flex items-center"><a href="/home" data-link class="hover:text-gray-600 font-bold px-4 py-4 block">Home</a></li>
+          <li class="flex items-center"><a href="/" data-link class="hover:text-gray-600 font-bold px-4 py-4 block">Home</a></li>
           
           <li class="relative group cursor-pointer flex items-center">
               <a class="px-4 py-4 flex items-center gap-1 h-full font-bold transition-colors duration-200 group-hover:bg-[#666666] group-hover:text-[#5B5CE2]">
@@ -45,21 +45,21 @@ export function Navbar() {
                       <li><a href="#" class="hover:underline">Pengurus Inti</a></li>
                       <li><a href="#" class="hover:underline">ADKESMA</a></li>
                       <li><a href="#" class="hover:underline">BIRPRO</a></li>
-                      <li><a href="#" class="hover:underline">DEPOR</a></li>
+                      <li><a href="/depor" class="hover:underline">DEPOR</a></li>
                       <li><a href="/biro-dkv" data-link class="hover:underline">DKV</a></li>
                   </ul>
                   <ul class="flex-1 min-w-40 p-6 space-y-4 marker:text-white pl-10 border-l-[3px] border-white font-medium list-none">
                       <li><a href="#" class="hover:underline">HUMAS</a></li>
                       <li><a href="#" class="hover:underline">KASTRAT</a></li>
                       <li><a href="#" class="hover:underline">KESTARI</a></li>
-                      <li><a href="#" class="hover:underline">LITBANG</a></li>
-                      <li><a href="#" class="hover:underline">PEDANK</a></li>
+                      <li><a href="/litbang" class="hover:underline">LITBANG</a></li>
+                      <li><a href="/pedank" class="hover:underline">PEDANK</a></li>
                   </ul>
                   <ul class="flex-1 min-w-40 p-6 space-y-4 marker:text-white pl-10 border-l-[3px] border-white font-medium list-none">
-                      <li><a href="#" class="hover:underline">PEMKAR</a></li>
+                      <li><a href="/pemkar" class="hover:underline">PEMKAR</a></li>
                       <li><a href="#" class="hover:underline">PSDM</a></li>
-                      <li><a href="#" class="hover:underline">SENBUD</a></li>
-                      <li><a href="#" class="hover:underline">SOSMAS</a></li>
+                      <li><a href="/senbud" class="hover:underline">SENBUD</a></li>
+                      <li><a href="/sosmas" class="hover:underline">SOSMAS</a></li>
                   </ul>
               </div>
           </li>
