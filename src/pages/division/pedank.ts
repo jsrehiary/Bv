@@ -20,8 +20,8 @@ export function PedankPage() {
 
     ${HeroDivision({
     title: "Departemen Pendidikan dan Keilmuan",
-    accentColor: "#4b4a92",
-    titleColor: "#F77C39",
+    accentColor: "#F77C39",
+    titleColor: "#309b57",
     description: "Mempunyai peran penting dalam memastikan setiap proses program kerja berjalan dengan transparan, penuh inovasi, dan tetap netral. Litbang juga terus bertransformasi menjadi pusat data yang terpercaya. Mereka menyajikan informasi yang akurat sekaligus membuka ruang kolaborasi progresif untuk seluruh IKM Vokasi UI. Bersama Litbang, setiap langkah BEM Vokasi UI 2025 jadi lebih terukur, terarah, dan siap membawa dampak nyata!",
     image: "/images/pedank-logo.png"
   })}

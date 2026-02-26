@@ -20,8 +20,8 @@ export function SenbudPage() {
 
     ${HeroDivision({
     title: "Departemen Seni dan Budaya",
-    accentColor: "#4b4a92",
-    titleColor: "#F77C39",
+      accentColor: "#F64994",
+      titleColor: "#4b4a92",
     description: "Berperan sebagai wadah IKM Vokasi UI menyalurkan dan mengembangkan minat serta bakat di bidang seni dan budaya. Mereka hadir bukan hanya sebagai wadah ekspresi, tetapi juga ruang tumbuh yang merayakan keberagaman dan kekayaan budaya di lingkungan Vokasi UI.",
     image: "/images/senbud-logo.png"
   })}

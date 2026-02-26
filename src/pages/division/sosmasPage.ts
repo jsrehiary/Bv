@@ -21,7 +21,7 @@ export function SosmasPage() {
     ${HeroDivision({
       title: "Departemen Sosial Masyarakat dan Lingkungan",
       accentColor: "#F64994",
-      titleColor: "#fff",
+      titleColor: "#4b4a92",
       description: "Menjadi wadah penggerak perubahan sosial dan lingkungan yang berkelanjutan. Sosmasling berperan aktif dalam memberikan manfaat bagi masyarakat dan mahasiswa, dengan meningkatkan kesadaran terhadap isu-isu sosial dan lingkungan. Dengan adanya mereka, BEM Vokasi UI 2025 turut menebarkan dampak positif bagi kehidupan sekitar dan menumbuhkan semangat peduli di kalangan IKM Vokasi UI.",
       image: "/images/sosmas-logo.png"
     })}

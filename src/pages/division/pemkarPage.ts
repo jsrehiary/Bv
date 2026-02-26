@@ -21,7 +21,7 @@ export function PemkarPage() {
     ${HeroDivision({
       title: "Departemen Pengembangan Karir",
       accentColor: "#F64994",
-      titleColor: "#fff",
+      titleColor: "#4b4a92",
       description: "Berperan sebagai wadah pengembangan keterampilan dan membantu membuka kesempatan untuk mahasiswa Vokasi UI dalam mempersiapkan kariernya. Pemkar juga membantu mahasiswa menentukan arah karier ke depannya agar lebih terarah dan siap menghadapi tantangan di dunia kerja nanti.",
       image: "/images/dkv-logo.png"
     })}
